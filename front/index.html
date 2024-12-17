@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ValBox</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="shortcut icon" href="images/vallogo.png" type="image/x-icon" />
+  <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/kanit" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d7bd8098e7.js" crossorigin="anonymous"></script>
+  <script type="module" src="./scripts/home.js" defer></script>
+</head>
+
+<body>
+  <!-- audio de fundo -->
+  <audio id="background-music" autoplay loop>
+    <source src="src/audio/Audio_background.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <!-- Cabeçalho -->
+  <header>
+    <video class="video-background" autoplay muted loop>
+      <source src="images/Videos/Video_background.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <p>ValBox</p>
+          </a>
+        </div>
+        <nav>
+          <ul id="menuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Agentes</a></li>
+            <li><a href="products.html">Produtos </a></li>
+            <li><a href="sobre.html">Sobre </a></li>
+            <li><a href="">Conta</a></li>
+          </ul>
+        </nav>
+        <a href="checkout.html"><img src="images/Carrinho.png" width="40px" height="40px" alt="Carrinho" /></a>
+        <img src="images/Music.png" width="40px" height="40px" alt="Música" style="margin-left: 20px; cursor: pointer;"
+          id="music-icon" />
+        <img src="images/menu.png" class="iconeMenu" onclick="openMenu()" alt="Menu" />
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <h1>Valorant</h1>
+          <p>A única loja oficial de Valorant que vende skins e Gift Card.</p>
+          <a href="products.html"><button>Compre Agora!</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- Banner -->
+  <section>
+    <img src="https://images6.alphacoders.com/137/1373934.jpg" alt="Oferta Banner Novo Agente"
+      class="offer_image_banner" />
+    <div class="small-container">
+      <div class="row">
+        <div class="col-2">
+          <h1 style="color: #ee5961">Novo Agente</h1>
+          <a href=""><button>Inspecione &#8594;</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primeiras skins no carrossel -->
+  <div class="container">
+    <h2 class="title">Vandals</h2>
+    <section class="section-product">
+      <button class="prev">
+        <i class="bi bi-chevron-double-left">&#8594;</i>
+      </button>
+      <section id="section-1" class="section-product-carrousel">
+        <div class="carrousel">
+        </div>
+      </section>
+      <button class="next">
+        <i class="bi bi-chevron-double-right">&#8594;</i>
+      </button>
+    </section>
+
+  <!-- Segunda parte das skins no carrossel -->
+    <h2 class="title">Phantoms</h2>
+    <section class="section-product">
+      <button class="prev">
+        <i class="bi bi-chevron-double-left">&#8594;</i>
+      </button>
+    <section id="section-2" class="section-product-carrousel">
+      <div class="carrousel">
+      </div>
+    </section>
+    <button class="next">
+      <i class="bi bi-chevron-double-right">&#8594;</i>
+    </button>
+    </section>
+  </div>
+
+  <!-- Banner 2 -->
+  <section id="box">
+    <img src="images/valorant-banner.jpeg" alt="Oferta Banner" class="offer_image_banner" />
+    <div class="small-container">
+      <div class="row">
+        <div class="col-2">
+          <h1>LootBox</h1>
+          <small>
+            A ValBox é a única loja de skins de Valorant do mercado que te
+            permite o giro de skins, teste a sua sorte! </small><br />
+          <a href="products.html"><button>Compre Agora &#8594;</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terceira parte das skins -->
+  <div class="container">
+    <h2 class="title">Facas</h2>
+    <section class="section-product">
+      <button class="prev">
+        <i class="bi bi-chevron-double-left">&#8594;</i>
+      </button>
+    <section id="section-3" class="section-product-carrousel">
+      <div class="carrousel">
+      </div>
+    </section>
+      <button class="next">
+        <i class="bi bi-chevron-double-right">&#8594;</i>
+      </button>
+    </section>
+  </div>
+
+  <!-- Patrocinadores -->
+  <main>
+    <div class="small-container">
+      <div class="row">
+        <div class="col">
+          <img src="images/google.png" alt="Google"/>
+        </div>
+        <div class="col">
+          <img src="images/Smoke.png" alt="Smoke"/>
+        </div>
+        <div class="col">
+          <img src="images/Valorant.png" alt="ValBox logo"/>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <h3>Baixe nosso Aplicativo!</h3>
+          <p>
+            Baixe nosso aplicativo para promoções incríveis! no Android e IOS
+          </p>
+          <div class="col-4">
+            <img src="images/playstore.png" alt="playstore"/>
+            <img src="images/appstore.png" alt="appstore"/>
+          </div>
+        </div>
+        <div class="col-2">
+          <img src="images/vallogo.png" alt="logo valbox"/>
+        </div>
+        <div class="col-3">
+          <h3>Links Úteis</h3>
+          <ul>
+            <li>Cupons</li>
+            <li>Blog</li>
+            <a href="adm.html">
+              <li>ADM</li>
+            </a>
+            <a href="sac.html">
+              <li>SAC</li>
+            </a>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h3>Nos Siga!</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p>Copyright@2024 Todos os direitos reservados a ValBox</p>
+    </div>
+  </footer>
+  <script src="scripts/script.js"></script>
+  <!--Script para responsividade no mobile para interação com cabeçalho -->
+  <script> 
+    var menuItems = document.getElementById("menuItems");
+
+    menuItems.style.maxHeight = "0px";
+
+    function openMenu() {
+      if (menuItems.style.maxHeight == "0px") {
+        menuItems.style.maxHeight = "200px";
+      } else menuItems.style.maxHeight = "0px";
+    }
+  </script>
+</body>
+
+</html>

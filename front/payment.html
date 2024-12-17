@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ValBox</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="shortcut icon" href="images/vallogo.png" type="image/x-icon" />
+  <link href="https://fonts.cdnfonts.com/css/valorant" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/kanit" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d7bd8098e7.js" crossorigin="anonymous"></script>
+  <script type="module" src="scripts/home.js" defer></script>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script type="module" src="scripts/payment.js" defer></script>
+</head>
+
+<!-- Cabeçalho -->
+<div class="header_main">
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <p>ValBox</p>
+          </a>
+        </div>
+        <nav>
+          <ul id="menuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Agentes</a></li>
+            <li><a href="products.html">Produtos </a></li>
+            <li><a href="sobre.html">Sobre </a></li>
+            <li><a href="">Conta</a></li>
+          </ul>
+        </nav>
+        <a href="carrinho.html"><img src="images/Carrinho.png" width="40px" height="40px" alt="Carrinho" /></a>
+        <img src="images/menu.png" class="iconeMenu" onclick="openMenu()" alt="Menu" />
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- Parte superior das compras -->
+<main class="product main-content container">
+  <div class="product text-container">
+    <h2 class="main-text">Pagamento</h2>
+    <p>Verifique os itens do carrinho e finalize agora</p>
+  </div>
+
+  <!-- Cadastrar dados do usuário -->
+  <section class="product text-container">
+    <div id="billing">
+      <div class="grid_col_1">
+        <form action="">
+          <h2>Seus Dados:</h2>
+          <div class="form-fields">
+            <Div class="form-field">
+              <label for="e-mail">E-mail</label>
+              <input type="e-mail" name="e-mail" id="e-mail" placeholder="e-mail">
+            </Div>
+            <div class="form-group container-flex">
+              <Div class="form-field">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Nome">
+              </Div>
+              <Div class="form-field">
+                <label for="Sobrenome">Sobrenome</label>
+                <input type="text" name="surname" id="surname" placeholder="Sobrenome">
+              </Div>
+            </div>
+
+            <div class="form-group container-flex">
+              <Div class="form-field">
+                <label for="phone">Telefone</label>
+                <input type="text" name="phone" id="phone" placeholder="Telefone com DDD">
+              </Div>
+              <Div class="form-field">
+                <label for="CPF">CPF</label>
+                <input type="text" name="CPF" id="CPF" placeholder="CPF">
+              </Div>
+            </div>
+            <div class="form-group container-flex">
+              <Div class="form-field">
+                <label for="address">Logradouro</label>
+                <input type="text" name="address" id="address" placeholder="Logradouro">
+              </Div>
+              <Div class="form-field cep">
+                <label for="zip">CEP</label>
+                <input type="text" name="zip" id="zip" placeholder="CEP">
+              </Div>
+            </div>
+
+
+            <div class="form-group container-flex">
+              <Div class="form-field">
+                <label for="address">Nº</label>
+                <input type="text" name="number" id="number" placeholder="Nº">
+              </Div>
+              <Div class="form-field">
+                <label for="address_2">Complemento</label>
+                <input type="address_2" name="address_2" id="address_2" placeholder="Complemento">
+              </Div>
+              <Div class="form-field">
+                <label for="neighborhood">Bairro</label>
+                <input type="text" name="neighborhood" id="neighborhood" placeholder="Bairro">
+              </div>
+            </div>
+
+            <div class="form-group container-flex">
+
+              <Div class="form-field">
+                <label for="city">Cidade</label>
+                <input type="text" name="city" id="city" placeholder="Cidade">
+              </Div>
+              <Div class="form-field uf">
+                <label for="state">Estado</label>
+                <select id="estado" name="UF">
+                  <option value="" selected>Selecione...</option>
+                  <option value="AC">AC</option>
+                  <option value="AL">AL</option>
+                  <option value="AP">AP</option>
+                  <option value="AM">AM</option>
+                  <option value="BA">BA</option>
+                  <option value="CE">CE</option>
+                  <option value="DF">DF</option>
+                  <option value="ES">ES</option>
+                  <option value="GO">GO</option>
+                  <option value="MA">MA</option>
+                  <option value="MT">MT</option>
+                  <option value="MS">MS</option>
+                  <option value="MG">MG</option>
+                  <option value="PA">PA</option>
+                  <option value="PB">PB</option>
+                  <option value="PR">PR</option>
+                  <option value="PE">PE</option>
+                  <option value="PI">PI</option>
+                  <option value="RJ">RJ</option>
+                  <option value="RN">RN</option>
+                  <option value="RS">RS</option>
+                  <option value="RO">RO</option>
+                  <option value="RR">RR</option>
+                  <option value="SC">SC</option>
+                  <option value="SP">SP</option>
+                  <option value="SE">SE</option>
+                  <option value="TO">TO</option>
+                </select>
+              </Div>
+            </Div>
+          </div>
+        </form>
+
+      </div>
+
+      <!-- Metodos de pagamento -->
+      <div class="grid_col_2">
+        <div class="total_container container-flex column">
+          <div class="total container-flex">
+            <h3>SUBTOTAL</h3>
+            <H3>R$ 0.00</H3>
+          </div>
+          <div class="total container-flex">
+            <h3>Frete</h3>
+            <H3>R$ 0.00</H3>
+          </div>
+          <div class="total container-flex">
+            <h3>Total</h3>
+            <H3>R$ 0.00</H3>
+          </div>
+        </div>
+
+        <button class="button checkout_btn">Finalizar</button>
+        <form class="container-flex">
+          <div class="pay-method">
+            <input type="radio" name="pagamento" id="credito" checked><label for="credito">Crédito</label>
+          </div>
+          <div class="pay-method">
+            <input type="radio" name="pagamento" id="debito"><label for="debito">Débito</label>
+          </div>
+          <div class="pay-method">
+            <input type="radio" name="pagamento" id="pix"><label for="pix">PIX</label>
+          </div>
+          <div class="pay-method">
+            <input type="radio" name="pagamento" id="bol"><label for="bol">Boleto</label>
+          </div>
+        </form>
+        <form class="payment">
+          <div class="form-field">
+            <label for="nome_cartao">Nome no Cartão:</label>
+            <input type="text" id="nome_cartao" name="nome_cartao" required>
+          </div>
+
+          <div class="form-field">
+            <label for="numero_cartao">Número do Cartão:</label>
+            <input type="text" id="numero_cartao" name="numero_cartao" maxlength="16" required>
+          </div>
+
+          <div class="card-info">
+            <div class="form-field val">
+              <label for="validade_cartao">Validade:</label>
+              <input type="text" id="validade_cartao" name="validade_cartao" placeholder="MM/AA" maxlength="5" required>
+            </div>
+
+            <div class="form-field cvv">
+              <label for="cvv">CVV:</label>
+              <input type="text" id="cvv" name="cvv" maxlength="3" required>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+</div>
+
+<!-- Rodapé -->
+<footer>
+  <div class="row">
+    <div class="col-1">
+      <h3>Baixe nosso Aplicativo!</h3>
+      <p>
+        Baixe nosso aplicativo para promoções incríveis! no Android e IOS
+      </p>
+      <div class="col-4">
+        <img src="images/playstore.png" alt="playstore" />
+        <img src="images/appstore.png" alt="appstore" />
+      </div>
+    </div>
+    <div class="col-2">
+      <img src="images/vallogo.png" alt="logo valbox" />
+    </div>
+    <div class="col-3">
+      <h3>Links Úteis</h3>
+      <ul>
+        <li>Cupons</li>
+        <li>Blog</li>
+        <a href="adm.html">
+          <li>ADM</li>
+        </a>
+        <a href="">
+          <li>SAC</li>
+        </a>
+      </ul>
+    </div>
+    <div class="col-3">
+      <h3>Nos Siga!</h3>
+      <ul>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+        <li>Youtube</li>
+      </ul>
+    </div>
+  </div>
+  <hr />
+  <p>Copyright@2024 Todos os direitos reservados a ValBox</p>
+  </div>
+</footer>
+<script src="scripts/script.js"></script>
+<!--Script para responsividade no mobile para interação com cabeçalho -->
+<script>
+  var menuItems = document.getElementById("menuItems");
+
+  menuItems.style.maxHeight = "0px";
+
+  function openMenu() {
+    if (menuItems.style.maxHeight == "0px") {
+      menuItems.style.maxHeight = "200px";
+    } else menuItems.style.maxHeight = "0px";
+  }
+</script>
+</body>
+
+</html>

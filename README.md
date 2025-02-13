@@ -2,10 +2,6 @@
 # ValBox - Integrator Project
 Integrative project that brings together all the subjects at Senai Roberto Mange.
 
-<div align="center">
-   <img src="[https://64.media.tumblr.com/6817bc1e7a8566924b4b2503a9ee4032/1eec2c221201275f-26/s640x960/4f6dffe3c2334ed1750917f9f0caa3ebc05c15a3.gif](https://tenor.com/ptBR/view/wingman-gif-1599104376302260408)">
-</div>
-
 &nbsp;
 
 ## 🧰 &nbsp;My toolbox
